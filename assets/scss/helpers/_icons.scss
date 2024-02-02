@@ -1,0 +1,153 @@
+// @import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('../fonts/icomoon.eot?c1ldvt');
+  src:  url('../fonts/icomoon.eot?c1ldvt#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?c1ldvt') format('truetype'),
+    url('../fonts/icomoon.woff?c1ldvt') format('woff'),
+    url('../fonts/icomoon.svg?c1ldvt##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrowdown2 {
+  &:before {
+    content: $icon-arrowdown2;     
+    color: #fff;
+  }
+}
+.icon-eye {
+  &:before {
+    content: $icon-eye;     
+    color: #fff;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;     
+    color: #fff;
+  }
+}
+.icon-sendBtn {
+  &:before {
+    content: $icon-sendBtn; 
+  }
+}
+.icon-music1 {
+  &:before {
+    content: $icon-music1;     
+    color: #ffbc39;
+  }
+}
+.icon-location1 {
+  &:before {
+    content: $icon-location1;     
+    color: #fff;
+  }
+}
+.icon-redheart {
+  &:before {
+    content: $icon-redheart;     
+    color: #ec3701;
+  }
+}
+.icon-heart1 {
+  &:before {
+    content: $icon-heart1;     
+    color: #fff;
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;     
+    color: #fff;
+  }
+}
+.icon-message2 {
+  &:before {
+    content: $icon-message2;     
+    color: #ffbc39;
+  }
+}
+.icon-microphone2 {
+  &:before {
+    content: $icon-microphone2;     
+    color: #ffbc39;
+  }
+}
+.icon-share {
+  &:before {
+    content: $icon-share;     
+    color: #fff;
+  }
+}
+.icon-usersquare {
+  &:before {
+    content: $icon-usersquare;     
+    color: #ffbc39;
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube;     
+    color: #fff;
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone;     
+    color: #ffbc39;
+  }
+}
+.icon-email {
+  &:before {
+    content: $icon-email;     
+    color: #ffbc39;
+  }
+}
+.icon-bell {
+  &:before {
+    content: $icon-bell;     
+    color: #ffbc39;
+  }
+}
+.icon-expand {
+  &:before {
+    color: #c82d71;
+    content: $icon-expand; 
+  }
+}
+.icon-download3 {
+  &:before {
+    content: $icon-download3; 
+  }
+}
+.icon-download2 {
+  &:before {
+    content: $icon-download2; 
+  }
+}
+.icon-xmark {
+  &:before {
+    color: #71b4ff;
+    content: $icon-xmark; 
+  }
+}
+

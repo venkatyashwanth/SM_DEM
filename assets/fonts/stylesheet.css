@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Volte Power';
+    src: url('VoltePower-Regular.eot');
+    src: url('VoltePower-Regular.eot?#iefix') format('embedded-opentype'),
+        url('VoltePower-Regular.woff2') format('woff2'),
+        url('VoltePower-Regular.woff') format('woff'),
+        url('VoltePower-Regular.ttf') format('truetype'),
+        url('VoltePower-Regular.svg#VoltePower-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte Power';
+    src: url('VoltePower-Light.eot');
+    src: url('VoltePower-Light.eot?#iefix') format('embedded-opentype'),
+        url('VoltePower-Light.woff2') format('woff2'),
+        url('VoltePower-Light.woff') format('woff'),
+        url('VoltePower-Light.ttf') format('truetype'),
+        url('VoltePower-Light.svg#VoltePower-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte Power';
+    src: url('VoltePower-Semibold.eot');
+    src: url('VoltePower-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('VoltePower-Semibold.woff2') format('woff2'),
+        url('VoltePower-Semibold.woff') format('woff'),
+        url('VoltePower-Semibold.ttf') format('truetype'),
+        url('VoltePower-Semibold.svg#VoltePower-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte Power Display';
+    src: url('VoltePowerDisplay-Light.eot');
+    src: url('VoltePowerDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('VoltePowerDisplay-Light.woff2') format('woff2'),
+        url('VoltePowerDisplay-Light.woff') format('woff'),
+        url('VoltePowerDisplay-Light.ttf') format('truetype'),
+        url('VoltePowerDisplay-Light.svg#VoltePowerDisplay-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Volte Power Display';
+    src: url('VoltePowerDisplay-Regular.eot');
+    src: url('VoltePowerDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('VoltePowerDisplay-Regular.woff2') format('woff2'),
+        url('VoltePowerDisplay-Regular.woff') format('woff'),
+        url('VoltePowerDisplay-Regular.ttf') format('truetype'),
+        url('VoltePowerDisplay-Regular.svg#VoltePowerDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

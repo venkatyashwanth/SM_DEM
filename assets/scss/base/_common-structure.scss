@@ -1,0 +1,254 @@
+.fp-watermark {
+  display: none;
+}
+
+.fp-table {
+  justify-content: flex-start;
+}
+.aspect-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  &__p150 {
+    padding-bottom: 150%;
+  }
+  &__p60 {
+    padding-bottom: 60%;
+  }
+  &__p56 {
+    padding-bottom: 56.1%;
+  }
+  &__p79 {
+    padding-bottom: 79.9%;
+  }
+  &__wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    img {
+      @include flex-center;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+}
+.thumb-wrap {
+  @include horizontal-center-transform;
+}
+.specificSection {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid #ccc;
+  top: 0;
+}
+
+.soundBtn {
+  opacity: 0;
+  padding: 2rem;
+  padding-left: 4.5rem;
+  border-radius: 50px;
+  width: auto;
+  height: 52px;
+  border: 0;
+  background-color: $black;
+  border: 1px solid $black;
+  color: $white;
+  font-family: $primary-bold;
+  font-size: 16px;
+  // Medium Desktop screen size
+  @include breakpoint(medium-large-desktop-max) {
+    // padding: 8px;
+    height: 36px;
+    padding-left: 4.5rem;
+    font-size: 12px;
+  }
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  @include flex-center;
+  &__muteBtn,
+  &__unmuteBtn {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      background-size: contain !important;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  &__muteBtn {
+    &::before {
+      background: url("../images/no-sound.png") no-repeat;
+    }
+  }
+  &__unmuteBtn {
+    &::before {
+      background: url("../images/volume.png") no-repeat;
+    }
+  }
+}
+
+// Main-Code
+$box-width: 72px;
+$box-bgclr: transparent;
+.select-wrapper {
+  background-color: $box-bgclr;
+  display: inline-block;
+  margin-left: 16px;
+  .custom-select {
+    position: relative;
+    width: $box-width;
+    select {
+      display: none;
+    }
+    .select-selected {
+      border-bottom: 1px solid #fff;
+      font-size: 1.4rem;
+      font-family: $primary-font;
+
+      /*style the arrow inside the select element:*/
+      &::after {
+        position: absolute;
+        content: "";
+        top: 30%;
+        right: 8px;
+        width: 0;
+        height: 0;
+
+        /* Arrow */
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        /* down */
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+      /*point the arrow upwards when the select box is open (active):*/
+      &.select-arrow-active:after {
+        /* Arrow */
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        /* up */
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        top: 10px;
+      }
+    }
+  }
+
+  /*style the items (options), including the selected item:*/
+  .select-items div,
+  .select-selected {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-family: $primary-font;
+    text-transform: uppercase;
+    padding: 3px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: transparent;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Video-JS
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  .my-video {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.vjs-custom-theme2 {
+  .vjs-tech {
+    pointer-events: none;
+    object-fit: cover;
+  }
+  .vjs-control-bar {
+    display: none;
+  }
+  .vjs-big-play-button {
+    opacity: 0 !important;
+  }
+  .vjs-poster img {
+    object-fit: cover;
+  }
+}
+
+// Schedule Tabs
+.custom-tab-1 {
+  .nav-tabs {
+    .nav-link {
+      color: #7f0404;
+      font-family: $primary-bold;
+      font-size: 3.2rem;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 3.2px;
+      text-transform: uppercase;
+      text-shadow: 1px 0 $primary-color, -1px 0 $primary-color,
+        0 1px $primary-color, 0 -1px $primary-color, 1px 1px $primary-color,
+        -1px -1px $primary-color, 1px -1px $primary-color,
+        -1px 1px $primary-color;
+      transition: all 400ms ease-in-out;
+      border: 0px !important;
+      &:focus-visible {
+        outline: none !important;
+      }
+      &:hover,
+      &.active {
+        text-shadow: 1px 0 transparent, -1px 0 transparent, 0 1px transparent,
+          0 -1px transparent, 1px 1px transparent, -1px -1px transparent,
+          1px -1px transparent, -1px 1px transparent;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.clear-fix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}

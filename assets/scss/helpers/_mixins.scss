@@ -1,0 +1,169 @@
+/* placeholder */
+@mixin placeholder {
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+
+
+$breakpoints: ('custom-small-mobile-max': (max-width: 390px),
+  
+  'portrait-mobile-max': (max-width: 575px),
+  'mobile-min': (min-width: 576px),
+  'mobile-max': (max-width: 767px),
+  'ipad-min': (min-width: 768px),
+  'ipad-max': (max-width: 991px),
+  'desktop-min': (min-width: 992px),
+  'desktop-max': (max-width: 1199px),
+  'large-desktop-min': (min-width: 1200px),
+  'medium-large-desktop-min': (min-width: 1365px),
+  'medium-large-desktop-max': (max-width: 1439px),
+  'extra-large-desktop-min': (min-width: 1440px),
+  
+  'xl-extra-large-desktop-min': (min-width: 1640px),
+  'xxl-extra-large-desktop-min': (min-width: 1840px),
+  'xxxl-extra-large-desktop-min': (min-width: 2000px),
+  'xxxxl-extra-large-desktop-min': (min-width: 2200px),
+  'four-k-tv-min': (min-width: 3800px),
+  'eight-k-tv-min': (min-width: 4200px),
+);
+
+//For screen between 768 - 1199
+
+@mixin custom-tablet {
+  @media (min-width: 320px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin breakpoint($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Couldn't find a breakpoint named `#{$name}`.";
+  }
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+
+// Transition
+@mixin transition($what: all, $time: 0.5s, $how: ease-in-out) {
+  transition: $what $time $how;
+}
+
+// rgba Border
+@mixin border-rgba ($color, $opacity) {
+  border: 1px solid rgba(red($color), green($color), blue($color), $opacity);
+}
+
+// Background Color rgba
+@mixin background-color-rgba($color, $opacity) {
+  background-color: rgba($color, $opacity);
+}
+
+// Color rgba
+@mixin color-rgba($color, $opacity) {
+  color: rgba($color, $opacity);
+}
+
+@mixin background-opacity($color, $opacity) {
+  background: $primary-color;
+  /* The Fallback */
+  background: rgba($color, $opacity);
+}
+
+// Horizontal and Center Align using Transform
+@mixin horizontal-center-transform {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin vertical-center-transform {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-vertical-center-transform {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Center Block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin anchor-button {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: $button-color;
+  font-family: $primary-font;
+
+  &:hover {
+    color: $button-hove-color;
+  }
+}
+
+//mixin for creating certain max-with center aligned block
+@mixin max-block($mwidth) {
+  margin: 0 auto;
+  text-align: center;
+  max-width: $mwidth; //Parameter passing to mixin 
+}
+
+@mixin custom-margin($margin) {
+  margin-bottom: $margin; //Parameter passing to mixin 
+}
+
+@mixin custom-margin-top($margin) {
+  margin-top: $margin; //Parameter passing to mixin 
+}
+
+@mixin custom-ipad {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}

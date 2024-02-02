@@ -1,0 +1,485 @@
+.footer--section {
+  background: linear-gradient(0deg, #3246bc 11.06%, #880656 103.15%);
+  height: 100vh;
+  @include breakpoint(mobile-max){
+    height: auto;
+  }
+
+  // Row-1
+  // Reach Us
+  .reachUs {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 4rem 2.6rem;
+    // Medium Desktop screen size
+    @include breakpoint(medium-large-desktop-max) {
+      padding: 1rem 2.6rem;
+    }
+    h3 {
+      font-size: 3rem;
+      line-height: 6.3rem;
+      color: #ffbc39;
+      margin-bottom: 4.2rem;
+      text-transform: uppercase;
+      // Medium Desktop screen size
+      @include breakpoint(medium-large-desktop-max) {
+        font-size: 2.2rem;
+        margin-bottom: 2.2rem;
+      }
+    }
+
+    .form--container {
+      label {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 2.2rem;
+        padding: 0;
+        padding-left: 5.8rem;
+        line-height: 2.2rem;
+        &::after {
+          background-color: transparent !important;
+        }
+        // Medium Desktop screen size
+        @include breakpoint(medium-large-desktop-max) {
+          font-size: 1.8rem;
+        }
+      }
+
+      .form-floating {
+        position: relative;
+        .form-font {
+          position: absolute;
+          top: 20%;
+          transform: translateY(-50%);
+          font-size: 3.3rem;
+          // Medium Desktop screen size
+          @include breakpoint(medium-large-desktop-max) {
+            font-size: 2.2rem;
+            top: 40%;
+          }
+        }
+      }
+
+      .form-floating:not(:last-child) {
+        margin-bottom: 6rem;
+        // Medium Desktop screen size
+        @include breakpoint(medium-large-desktop-max) {
+          margin-bottom: 3rem;
+        }
+      }
+      .form-floating > .form-control:focus ~ label {
+        color: rgba(255, 255, 255, 0.3);
+        transform: scale(1) translateY(-30px) translateX(0rem);
+        // Medium Desktop screen size
+        @include breakpoint(medium-large-desktop-max) {
+          transform: scale(1) translateY(-20px) translateX(0rem);
+        }
+      }
+      .form-floating > .form-control:not(:placeholder-shown) ~ label {
+        transform: scale(1) translateY(-30px) translateX(0rem);
+        color: rgba(255, 255, 255, 0.3);
+        // Medium Desktop screen size
+        @include breakpoint(medium-large-desktop-max) {
+          transform: scale(1) translateY(-20px) translateX(0rem);
+        }
+      }
+      .form-floating > .form-control {
+        padding-bottom: 2rem;
+      }
+      .form-floating > .form-control:not(:placeholder-shown) {
+        padding-bottom: 2rem;
+      }
+
+      input[type="text"] {
+        border: none !important;
+        border-radius: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+        background-color: transparent !important;
+        font-size: 24px;
+        color: rgba(255, 255, 255, 1);
+        padding-left: 58px;
+        // Medium Desktop screen size
+        @include breakpoint(medium-large-desktop-max) {
+          // font-size: 1.4rem;
+          font-size: 1.8rem;
+        }
+        &:focus {
+          border-bottom: 1px solid #ffbc39 !important;
+          border-radius: 0px;
+          box-shadow: none !important;
+        }
+      }
+
+      input[type="email"] {
+        border: none !important;
+        border-radius: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+        background-color: transparent !important;
+        font-size: 24px;
+        line-height: normal;
+        // padding-bottom: 30px;
+        color: rgba(255, 255, 255, 1);
+        padding-left: 58px;
+        // Medium Desktop screen size
+        @include breakpoint(medium-large-desktop-max) {
+          // font-size: 1.4rem;
+          font-size: 1.8rem;
+        }
+        &:focus {
+          border-bottom: 1px solid #ffbc39 !important;
+          border-radius: 0px;
+          box-shadow: none !important;
+        }
+      }
+      .feedback--submit {
+        position: relative;
+        .submission {
+          position: absolute;
+          right: 0;
+          top: 20%;
+          transform: translateY(-50%);
+          display: flex;
+          align-items: center;
+          // Medium Desktop screen size
+          @include breakpoint(medium-large-desktop-max) {
+            top: 40%;
+          }
+          .icon-element {
+            font-size: 3.3rem;
+            // Medium Desktop screen size
+            @include breakpoint(medium-large-desktop-max) {
+              font-size: 2.2rem;
+            }
+          }
+          .icon-element-main {
+            font-size: 2.2rem;
+            background-color: #ffbc39;
+            border-radius: 50%;
+            padding: 8px;
+            // Medium Desktop screen size
+            @include breakpoint(medium-large-desktop-max) {
+              font-size: 1.2rem;
+            }
+          }
+          button {
+            background-color: transparent;
+            border: none;
+            &:not(:last-child) {
+              margin-right: 20px;
+              // Medium Desktop screen size
+              @include breakpoint(medium-large-desktop-max) {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Right-side
+  .channelAvailable {
+    padding: 4rem 2.6rem;
+    @include breakpoint(medium-large-desktop-max) {
+      padding: 1rem 2.6rem;
+    }
+    background-color: rgba(0, 0, 0, 0.3);
+    .channelBox-container {
+      margin-left: 20px;
+    }
+    .channelBox-container:not(:last-child) {
+      margin-bottom: 38px;
+    }
+    .channel-container {
+      display: inline-block;
+      max-width: 125px;
+      &:not(:last-child) {
+        margin-right: 6px;
+      }
+      .image-wrapper {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      span {
+        display: inline-block;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        width: 100%;
+        color: #fff;
+        font-size: 2rem;
+        line-height: 24px;
+        padding: 1.6rem 0;
+        margin-top: 3px;
+        // Medium Desktop screen size
+        @include breakpoint(medium-large-desktop-max) {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    .slot-heading {
+      span {
+        display: block;
+        text-align: end;
+        font-size: 3rem;
+        line-height: normal;
+        // Medium Desktop screen size
+        @include breakpoint(medium-large-desktop-max) {
+          font-size: 2.2rem;
+        }
+        @include breakpoint(mobile-max) {
+          text-align: start;
+        }
+      }
+      &--main {
+        color: #ffbc39;
+        text-transform: uppercase;
+      }
+      &--sub {
+        color: #ffffff;
+      }
+    }
+    .slot-decription {
+      text-align: end;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: #fff;
+      margin-top: 4.6rem;
+      // Medium Desktop screen size
+      @include breakpoint(medium-large-desktop-max) {
+        // font-size: 1.2rem;
+        margin-top: 2rem;
+        font-size: 1.4rem;
+      }
+      @include breakpoint(mobile-max) {
+        text-align: start;
+      }
+    }
+  }
+
+  // Row-2
+  // links
+  .links {
+    padding: 2rem 4rem;
+    @include breakpoint(medium-large-desktop-max) {
+      padding: 1rem 2.6rem;
+    }
+    h3 {
+      color: #ffbc39;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      // Medium Desktop screen size
+      @include breakpoint(medium-large-desktop-max) {
+        // font-size: 18px;
+        font-size: 2.2rem;
+      }
+    }
+    .links-list-items {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      li {
+        margin-bottom: 20px;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 18px;
+          line-height: 24px;
+          // Medium Desktop screen size
+          @include breakpoint(medium-large-desktop-max) {
+            font-size: 1.4rem;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background: rgba(255, 255, 255, 0.3);
+      top: 10%;
+      bottom: 10%;
+      right: 0px;
+      width: 1px;
+      @include breakpoint(mobile-max) {
+        top: unset;
+        height: 1px;
+        width: 90%;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  // contactUs
+  .contactUs {
+    padding: 2rem 6.6rem;
+    @include breakpoint(medium-large-desktop-max) {
+      padding: 1rem 2.6rem;
+    }
+    h3 {
+      color: #ffbc39;
+      margin-bottom: 42px;
+      text-transform: uppercase;
+      // Medium Desktop screen size
+      @include breakpoint(medium-large-desktop-max) {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .content-wrapper {
+      display: flex;
+      @include breakpoint(mobile-max) {
+        flex-direction: column;
+      }
+      .wraper-one {
+        width: 28%;
+        min-width: 3.1rem;
+        // max-width: 260px;
+        @include breakpoint(mobile-max) {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          min-width: none;
+          max-width: none;
+        }
+      }
+      .wraper-two {
+        width: 23%;
+        min-width: 340px;
+        // max-width: 300px;
+      }
+      .wraper-three {
+        margin-left: 20px;
+        span {
+          letter-spacing: 2px;
+          // Medium Desktop screen size
+          @include breakpoint(medium-large-desktop-max) {
+            font-size: 1.4rem;
+          }
+        }
+        @include breakpoint(mobile-max) {
+          margin-left: 0;
+        }
+      }
+    }
+    .contactUs-text {
+      font-size: 20px;
+      line-height: 26px;
+      color: #fff;
+      letter-spacing: 2px;
+      // Medium Desktop screen size
+      @include breakpoint(medium-large-desktop-max) {
+        font-size: 1.4rem;
+      }
+    }
+    .map-btn {
+      border: 0px;
+      color: #ffbc39;
+      font-size: 16px;
+      line-height: 17px;
+      padding: 8px 8px;
+      background-color: #000;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      // Medium Desktop screen size
+      @include breakpoint(medium-large-desktop-max) {
+        font-size: 12px;
+      }
+    }
+    .contactUs-list-items {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        span:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  // Row-3
+  // channel-slider section
+  .channelSlider-section {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .channelSwiper-left {
+    padding: 2rem 4rem;
+    @include breakpoint(medium-large-desktop-max) {
+      padding: 1rem 2.6rem;
+    }
+    h3 {
+      max-width: 120px;
+      color: #ffbc39;
+      text-transform: uppercase;
+      // Medium Desktop screen size
+      @include breakpoint(medium-large-desktop-max) {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .channelSwiper-right {
+    padding: 2rem 4rem;
+    .image-wrapper {
+      // max-width: 160px;
+      max-width: 120px;
+
+      // Medium Desktop screen size
+      @include breakpoint(medium-large-desktop-max) {
+        max-width: 70px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  // Row-4
+  .copyright-content {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    // margin: 14px 0px;
+    margin: 2.2rem 0;
+    // Medium Desktop screen size
+    @include breakpoint(medium-large-desktop-max) {
+      font-size: 1.4rem;
+      line-height: normal;
+      margin: 0;
+      padding: 0;
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .content-one {
+    height: 50vh;
+  }
+  .content-two {
+    height: 28vh;
+  }
+  .content-three {
+    height: 15vh;
+  }
+  .content-four {
+    height: 7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
