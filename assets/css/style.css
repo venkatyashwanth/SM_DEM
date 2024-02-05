@@ -8023,6 +8023,46 @@ a {
       height: 100%;
       object-fit: cover;
       object-position: top; }
+    .aspect-container__wrapper .gallery__data {
+      position: absolute;
+      bottom: 1rem;
+      right: 2rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .5s; }
+      .aspect-container__wrapper .gallery__data .social-icons {
+        margin-bottom: 6px;
+        display: flex; }
+        .aspect-container__wrapper .gallery__data .social-icons li {
+          display: flex;
+          align-items: center;
+          height: 30px;
+          position: relative; }
+          .aspect-container__wrapper .gallery__data .social-icons li span {
+            color: #fff;
+            font-family: "Staat-Regular", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase; }
+            .aspect-container__wrapper .gallery__data .social-icons li span:first-child {
+              margin-right: 0.5rem; }
+          .aspect-container__wrapper .gallery__data .social-icons li:not(:last-child) {
+            margin-right: 2.5rem; }
+          .aspect-container__wrapper .gallery__data .social-icons li:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -1.3rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 100%;
+            width: 1px; }
+        .aspect-container__wrapper .gallery__data .social-icons .custom-icon {
+          font-size: 2rem; }
+    .aspect-container__wrapper:hover .gallery__data {
+      opacity: 1;
+      visibility: visible; }
 
 .thumb-wrap {
   position: absolute;

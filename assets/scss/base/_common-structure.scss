@@ -35,6 +35,56 @@
       object-fit: cover;
       object-position: top;
     }
+    .gallery__data{
+      position: absolute;
+      bottom: 1rem;
+      right: 2rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .5s;
+      .social-icons {
+        margin-bottom: 6px;
+        display: flex;
+        li {
+          display: flex;
+          align-items: center;
+          height: 30px;
+    
+          span {
+            color: $white;
+            font-family: $secondary-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            &:first-child {
+              margin-right: 0.5rem;
+            }
+          }
+          &:not(:last-child) {
+            margin-right: 2.5rem;
+          }
+          position: relative;
+          &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -1.3rem;
+            background-color: rgba(#fff, 0.5);
+            height: 100%;
+            width: 1px;
+          }
+        }
+        .custom-icon {
+          font-size: 2rem;
+        }
+      }
+    }
+    &:hover .gallery__data{
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 .thumb-wrap {
