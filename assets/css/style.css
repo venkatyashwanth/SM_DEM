@@ -9543,6 +9543,381 @@ img {
           font-size: 18px;
           line-height: 26px; }
 
+.social-media {
+  background-image: linear-gradient(to top, #ffbc39, #880656);
+  height: 100vh;
+  width: 100%; }
+  .social-media__top {
+    height: calc(60vh + 3rem);
+    margin-bottom: -3rem;
+    width: 100%;
+    background-color: rgba(2, 2, 2, 0.25);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; }
+
+@media (min-width: 1366px) and (min-height: 600px) {
+  .social-media__top {
+    height: calc(60vh + 2rem);
+    margin-bottom: -2rem; } }
+  .social-media__boxes {
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 3rem; }
+    .social-media__boxes-container {
+      width: 38rem;
+      aspect-ratio: 20 / 33; }
+      @media (min-width: 1280px) {
+        .social-media__boxes-container {
+          width: 22.8rem; } }
+      @media (min-width: 1366px) {
+        .social-media__boxes-container {
+          width: 26.6rem; } }
+  @media (min-width: 1366px) and (min-height: 600px) {
+    .social-media__boxes-container {
+      width: 22rem; } }
+  @media (min-width: 1366px) and (min-height: 768px) {
+    .social-media__boxes-container {
+      width: 26.6rem; } }
+
+@media (min-width: 1440px) and (min-height: 900px) {
+  .social-media__boxes-container {
+    width: 26.752rem; } }
+      @media (min-width: 1536px) {
+        .social-media__boxes-container {
+          width: 34.2rem; } }
+  @media (min-width: 1536px) and (min-height: 800px) {
+    .social-media__boxes-container {
+      width: 29rem; } }
+      @media (min-width: 1920px) {
+        .social-media__boxes-container {
+          width: 32rem; } }
+  @media (min-width: 1920px) and (min-height: 960px) {
+    .social-media__boxes-container {
+      width: 34.2rem; } }
+  @media (min-width: 1920px) and (min-height: 1080px) {
+    .social-media__boxes-container {
+      width: 38rem; } }
+      .social-media__boxes-container:not(:last-child) {
+        margin-right: 3.3rem; }
+      .social-media__boxes-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .social-media__boxes-fb {
+      position: relative; }
+      .social-media__boxes-fb::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: linear-gradient(to top, #032f58, rgba(0, 0, 0, 0)); }
+    .social-media__boxes-tw {
+      position: relative; }
+      .social-media__boxes-tw::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: linear-gradient(to top, #010047, rgba(0, 0, 0, 0)); }
+    .social-media__boxes .overlay-text {
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      z-index: 20;
+      padding: 1.8rem 2.5rem; }
+      .social-media__boxes .overlay-text .social-media__brand-logo {
+        width: 3.4rem;
+        aspect-ratio: 1 / 1; }
+        @media (min-width: 1280px) {
+          .social-media__boxes .overlay-text .social-media__brand-logo {
+            width: 2.04rem; } }
+        @media (min-width: 1366px) {
+          .social-media__boxes .overlay-text .social-media__brand-logo {
+            width: 2.38rem; } }
+        @media (min-width: 1440px) {
+          .social-media__boxes .overlay-text .social-media__brand-logo {
+            width: 2.72rem; } }
+        @media (min-width: 1536px) {
+          .social-media__boxes .overlay-text .social-media__brand-logo {
+            width: 3.06rem; } }
+      .social-media__boxes .overlay-text .social-media__brand-name {
+        font-family: "Monster-Bold", sans-serif;
+        font-size: 2.2rem;
+        line-height: 2.682rem;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 5px; }
+        @media (min-width: 1280px) {
+          .social-media__boxes .overlay-text .social-media__brand-name {
+            font-size: 1.32rem; } }
+        @media (min-width: 1366px) {
+          .social-media__boxes .overlay-text .social-media__brand-name {
+            font-size: 1.54rem; } }
+        @media (min-width: 1440px) {
+          .social-media__boxes .overlay-text .social-media__brand-name {
+            font-size: 1.76rem; } }
+        @media (min-width: 1536px) {
+          .social-media__boxes .overlay-text .social-media__brand-name {
+            font-size: 1.98rem; } }
+      .social-media__boxes .overlay-text .social-media__brand-description {
+        font-family: "Monster-Reg", sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        color: #fff; }
+        @media (min-width: 1280px) {
+          .social-media__boxes .overlay-text .social-media__brand-description {
+            font-size: 1.08rem;
+            line-height: 1.56rem; } }
+        @media (min-width: 1366px) {
+          .social-media__boxes .overlay-text .social-media__brand-description {
+            font-size: 1.26rem;
+            line-height: 1.82rem; } }
+        @media (min-width: 1440px) {
+          .social-media__boxes .overlay-text .social-media__brand-description {
+            font-size: 1.44rem;
+            line-height: 2.08rem; } }
+        @media (min-width: 1536px) {
+          .social-media__boxes .overlay-text .social-media__brand-description {
+            font-size: 1.62rem;
+            line-height: 2.34rem; } }
+    .social-media__boxes-ins {
+      position: relative; }
+      .social-media__boxes-ins .insta-logo-name {
+        position: absolute;
+        top: 0;
+        left: 100%; }
+        .social-media__boxes-ins .insta-logo-name .brand-name {
+          text-transform: uppercase;
+          font-family: "Monster-Bold", sans-serif;
+          font-size: 5.2rem;
+          line-height: 6.339rem;
+          color: rgba(255, 255, 255, 0.3);
+          margin: 0;
+          padding: 0.2rem 1rem; }
+          @media (min-width: 1280px) {
+            .social-media__boxes-ins .insta-logo-name .brand-name {
+              font-size: 3.12rem; } }
+          @media (min-width: 1366px) {
+            .social-media__boxes-ins .insta-logo-name .brand-name {
+              font-size: 3.64rem !important; } }
+          @media (min-width: 1440px) {
+            .social-media__boxes-ins .insta-logo-name .brand-name {
+              font-size: 4.16rem; } }
+          @media (min-width: 1536px) {
+            .social-media__boxes-ins .insta-logo-name .brand-name {
+              font-size: 4.68rem; } }
+        .social-media__boxes-ins .insta-logo-name img {
+          width: unset;
+          height: unset;
+          object-fit: contain; }
+  .social-media__slider-wrapper__insta {
+    width: 100%;
+    margin-left: 2rem;
+    overflow: hidden; }
+    .social-media__slider-wrapper__insta .slider-heading {
+      width: 30.5rem;
+      margin-left: auto;
+      padding: 0 1rem; }
+      .social-media__slider-wrapper__insta .slider-heading .heading {
+        font-family: "Monster-Bold", sans-serif;
+        font-size: 3.2rem;
+        line-height: 3.4rem;
+        color: rgba(255, 255, 255, 0.3);
+        text-align: right;
+        text-transform: uppercase; }
+        @media (min-width: 1280px) {
+          .social-media__slider-wrapper__insta .slider-heading .heading {
+            font-size: 1.92rem; } }
+        @media (min-width: 1366px) {
+          .social-media__slider-wrapper__insta .slider-heading .heading {
+            font-size: 2.24rem; } }
+        @media (min-width: 1440px) {
+          .social-media__slider-wrapper__insta .slider-heading .heading {
+            font-size: 2.56rem; } }
+        @media (min-width: 1536px) {
+          .social-media__slider-wrapper__insta .slider-heading .heading {
+            font-size: 2.88rem; } }
+        .social-media__slider-wrapper__insta .slider-heading .heading span {
+          display: block; }
+    .social-media__slider-wrapper__insta .instaSwiper .content-wrapper {
+      aspect-ratio: 349 / 216;
+      width: 34.9rem; }
+      @media (min-width: 1280px) {
+        .social-media__slider-wrapper__insta .instaSwiper .content-wrapper {
+          width: 24.43rem; } }
+      @media (min-width: 1366px) {
+        .social-media__slider-wrapper__insta .instaSwiper .content-wrapper {
+          width: 24.43rem; } }
+  @media (min-width: 1366px) and (min-height: 600px) {
+    .social-media__slider-wrapper__insta .instaSwiper .content-wrapper {
+      width: 30.5rem; } }
+  @media (min-width: 1366px) and (min-height: 768px) {
+    .social-media__slider-wrapper__insta .instaSwiper .content-wrapper {
+      width: 24.43rem; } }
+      @media (min-width: 1440px) {
+        .social-media__slider-wrapper__insta .instaSwiper .content-wrapper {
+          width: 27.92rem; } }
+      @media (min-width: 1536px) {
+        .social-media__slider-wrapper__insta .instaSwiper .content-wrapper {
+          width: 31.41rem; } }
+  @media (min-width: 1536px) and (min-height: 800px) {
+    .social-media__slider-wrapper__insta .instaSwiper .content-wrapper {
+      width: 27.92rem; } }
+      @media (min-width: 1920px) {
+        .social-media__slider-wrapper__insta .instaSwiper .content-wrapper {
+          width: 34.9rem; } }
+      .social-media__slider-wrapper__insta .instaSwiper .content-wrapper img {
+        width: 100%;
+        height: 100%; }
+  .social-media__bottom {
+    height: 40vh;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .social-media__bottom-text {
+      flex-grow: 1;
+      text-align: right; }
+      .social-media__bottom-text-wrap {
+        display: flex;
+        flex-direction: column; }
+        .social-media__bottom-text-wrap .icon-wrapper {
+          position: relative;
+          align-self: flex-end;
+          background-color: red;
+          height: 5.6rem;
+          width: 6rem;
+          border-top-left-radius: 50%;
+          border-bottom-left-radius: 50%; }
+          .social-media__bottom-text-wrap .icon-wrapper span {
+            font-size: 3rem;
+            position: absolute;
+            top: 50%;
+            left: 56%;
+            transform: translate(-50%, -50%); }
+        .social-media__bottom-text-wrap .social-heading-text {
+          font-family: "Monster-Bold", sans-serif;
+          font-size: 5.2rem;
+          line-height: 6.339rem;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.3);
+          padding: 0 0.5rem; }
+          @media (min-width: 1280px) {
+            .social-media__bottom-text-wrap .social-heading-text {
+              font-size: 3.12rem;
+              line-height: 3.8034rem; } }
+          @media (min-width: 1366px) {
+            .social-media__bottom-text-wrap .social-heading-text {
+              font-size: 3.64rem;
+              line-height: 4.4373rem; } }
+          @media (min-width: 1440px) {
+            .social-media__bottom-text-wrap .social-heading-text {
+              font-size: 4.16rem;
+              line-height: 5.0712rem; } }
+          @media (min-width: 1536px) {
+            .social-media__bottom-text-wrap .social-heading-text {
+              font-size: 4.576rem;
+              line-height: 5.57832rem; } }
+          @media (min-width: 1920px) {
+            .social-media__bottom-text-wrap .social-heading-text {
+              font-size: 5.2rem;
+              line-height: 6.339rem; } }
+    .social-media__bottom-slider {
+      flex-grow: 2;
+      max-width: 80%; }
+      .social-media__bottom-slider .content-wrapper {
+        aspect-ratio: 50 / 27;
+        width: 40rem;
+        border-radius: 2rem;
+        overflow: hidden; }
+
+@media (min-width: 1280px) and (min-height: 600px) {
+  .social-media__bottom-slider .content-wrapper {
+    width: 26rem; } }
+
+@media (min-width: 1280px) and (min-height: 768px) {
+  .social-media__bottom-slider .content-wrapper {
+    width: 24rem; } }
+
+@media (min-width: 1366px) and (min-height: 600px) {
+  .social-media__bottom-slider .content-wrapper {
+    width: 25rem; } }
+
+@media (min-width: 1366px) and (min-height: 768px) {
+  .social-media__bottom-slider .content-wrapper {
+    width: 28rem; } }
+
+@media (min-width: 1440px) and (min-height: 800px) {
+  .social-media__bottom-slider .content-wrapper {
+    width: 29rem; } }
+
+@media (min-width: 1440px) and (min-height: 900px) {
+  .social-media__bottom-slider .content-wrapper {
+    width: 32rem; } }
+
+@media (min-width: 1536px) and (min-height: 800px) {
+  .social-media__bottom-slider .content-wrapper {
+    width: 30rem; } }
+
+@media (min-width: 1536px) and (min-height: 864px) {
+  .social-media__bottom-slider .content-wrapper {
+    width: 32rem; } }
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .social-media__bottom-slider .content-wrapper {
+    width: 40rem; } }
+        .social-media__bottom-slider .content-wrapper img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .social-media__bottom-slider .program-desc {
+        font-family: "Monster-Reg", sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        color: #fff;
+        padding-top: 1.6rem;
+        padding-left: 2rem;
+        width: 28rem; }
+        @media (min-width: 1280px) {
+          .social-media__bottom-slider .program-desc {
+            font-size: 1.08rem;
+            line-height: 1.56rem;
+            padding-top: 1.408rem;
+            padding-left: 1.2rem; } }
+        @media (min-width: 1366px) {
+          .social-media__bottom-slider .program-desc {
+            font-size: 1.26rem;
+            line-height: 1.82rem;
+            padding-top: 0.96rem;
+            padding-left: 1.4rem; } }
+        @media (min-width: 1440px) {
+          .social-media__bottom-slider .program-desc {
+            font-size: 1.44rem;
+            line-height: 2.08rem;
+            padding-top: 1.28rem;
+            padding-left: 1.6rem; } }
+        @media (min-width: 1536px) {
+          .social-media__bottom-slider .program-desc {
+            font-size: 1.584rem;
+            line-height: 2.288rem;
+            padding-top: 1.408rem;
+            padding-left: 1.76rem; } }
+        @media (min-width: 1920px) {
+          .social-media__bottom-slider .program-desc {
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            padding-top: 1.6rem;
+            padding-left: 2rem; } }
+        .social-media__bottom-slider .program-desc span {
+          display: block; }
+
 @media (max-width: 767px) {
   ::-webkit-scrollbar {
     width: 0px; }
@@ -10062,6 +10437,176 @@ img {
       font-size: 1.8rem;
       line-height: 2.6rem; }
 
+.socialMedia-mobile {
+  background-image: linear-gradient(to top, #901b17, #3d041a);
+  padding-top: 3.5rem; }
+  .socialMedia-mobile .social-media {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: unset;
+    background-image: none; }
+    .socialMedia-mobile .social-media--top {
+      display: flex;
+      justify-content: space-between; }
+    .socialMedia-mobile .social-media .sm-aspectRatio .img-wrapper {
+      width: 19rem;
+      aspect-ratio: 95 / 157; }
+      @media (max-width: 429px) {
+        .socialMedia-mobile .social-media .sm-aspectRatio .img-wrapper {
+          width: 18rem; } }
+      @media (max-width: 413px) {
+        .socialMedia-mobile .social-media .sm-aspectRatio .img-wrapper {
+          width: 17rem; } }
+      @media (max-width: 389px) {
+        .socialMedia-mobile .social-media .sm-aspectRatio .img-wrapper {
+          width: 15.5rem; } }
+      @media (max-width: 359px) {
+        .socialMedia-mobile .social-media .sm-aspectRatio .img-wrapper {
+          width: 13.5rem; } }
+      .socialMedia-mobile .social-media .sm-aspectRatio .img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .socialMedia-mobile .social-media-fb {
+      position: relative; }
+      .socialMedia-mobile .social-media-fb .overlay {
+        background-image: linear-gradient(to top, #032f58, rgba(0, 0, 0, 0)); }
+    .socialMedia-mobile .social-media-tw {
+      position: relative; }
+      .socialMedia-mobile .social-media-tw .overlay {
+        background-image: linear-gradient(to top, #010047, rgba(0, 0, 0, 0)); }
+    .socialMedia-mobile .social-media .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .socialMedia-mobile .social-media .overlay .overlay-text {
+        padding: 1rem; }
+        .socialMedia-mobile .social-media .overlay .overlay-text > *:not(:last-child) {
+          margin-bottom: 1rem; }
+    .socialMedia-mobile .social-media__brand-logo {
+      width: 3.027rem;
+      aspect-ratio: 1 / 1; }
+    .socialMedia-mobile .social-media__brand-name {
+      font-family: "Monster-Bold", sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.95rem;
+      text-transform: uppercase;
+      color: #fff; }
+    .socialMedia-mobile .social-media__brand-description {
+      font-family: "Monster-Reg", sans-serif;
+      font-size: 1rem;
+      line-height: 1.3rem;
+      color: #fff; }
+    .socialMedia-mobile .social-media--bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 2rem; }
+    .socialMedia-mobile .social-media-ins {
+      position: relative; }
+      .socialMedia-mobile .social-media-ins .insta-brandName-logo {
+        position: absolute;
+        top: 0;
+        left: 100%; }
+        .socialMedia-mobile .social-media-ins .insta-brandName-logo .brand-name {
+          display: block;
+          font-family: "Monster-Bold", sans-serif;
+          font-size: 2.2rem;
+          line-height: 2.682rem;
+          color: rgba(255, 255, 255, 0.3);
+          text-transform: uppercase;
+          padding: .3rem .6rem; }
+        .socialMedia-mobile .social-media-ins .insta-brandName-logo img {
+          height: 2.686rem;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          width: auto; }
+    .socialMedia-mobile .social-media-insta-swiper {
+      width: 19rem;
+      overflow: hidden; }
+      @media (max-width: 429px) {
+        .socialMedia-mobile .social-media-insta-swiper {
+          width: 18rem; } }
+      @media (max-width: 413px) {
+        .socialMedia-mobile .social-media-insta-swiper {
+          width: 17rem; } }
+      @media (max-width: 389px) {
+        .socialMedia-mobile .social-media-insta-swiper {
+          width: 15.5rem; } }
+      @media (max-width: 359px) {
+        .socialMedia-mobile .social-media-insta-swiper {
+          width: 13.5rem; } }
+  .socialMedia-mobile .social-youtube {
+    margin-top: -1.5rem;
+    background-color: #000;
+    padding: .1px; }
+    .socialMedia-mobile .social-youtube .brandname-logo {
+      margin-top: 5.3rem;
+      display: flex;
+      align-items: center; }
+      .socialMedia-mobile .social-youtube .brandname-logo .icon-wrapper {
+        display: inline-block;
+        background-color: #cd201f;
+        width: 7.5rem;
+        height: 5.6rem;
+        align-items: center;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        position: relative; }
+        .socialMedia-mobile .social-youtube .brandname-logo .icon-wrapper .icon-youtube {
+          position: absolute;
+          top: 50%;
+          left: 45%;
+          transform: translate(-50%, -50%);
+          font-size: 3rem; }
+      .socialMedia-mobile .social-youtube .brandname-logo .social-heading-text {
+        font-family: "Monster-Bold", sans-serif;
+        font-size: 2.2rem;
+        line-height: 2.682rem;
+        color: rgba(255, 255, 255, 0.3);
+        padding: 0 .8rem;
+        text-transform: uppercase; }
+    .socialMedia-mobile .social-youtube .youtube-swiper {
+      margin-top: 3.6rem;
+      margin-bottom: 1.8rem; }
+      .socialMedia-mobile .social-youtube .youtube-swiper .content-wrapper {
+        width: 32.8rem;
+        aspect-ratio: 2 / 1;
+        overflow: hidden;
+        border-radius: 1.5rem; }
+        @media (max-width: 429px) {
+          .socialMedia-mobile .social-youtube .youtube-swiper .content-wrapper {
+            width: 31rem; } }
+        @media (max-width: 413px) {
+          .socialMedia-mobile .social-youtube .youtube-swiper .content-wrapper {
+            width: 29.5rem; } }
+        @media (max-width: 389px) {
+          .socialMedia-mobile .social-youtube .youtube-swiper .content-wrapper {
+            width: 28rem; } }
+        @media (max-width: 359px) {
+          .socialMedia-mobile .social-youtube .youtube-swiper .content-wrapper {
+            width: 25rem; } }
+        .socialMedia-mobile .social-youtube .youtube-swiper .content-wrapper img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .socialMedia-mobile .social-youtube .youtube-swiper .program-desc {
+        font-family: "Monster-Reg", sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        padding-top: 1.2rem;
+        padding-left: 1rem; }
+        .socialMedia-mobile .social-youtube .youtube-swiper .program-desc span {
+          display: block;
+          color: #fff; }
+
 .footer-section-mobile {
   background: linear-gradient(356deg, #3246bc 26.86%, #84095b 89.37%); }
   .footer-section-mobile .reach-us,
@@ -10091,9 +10636,9 @@ img {
       padding: 0;
       padding-left: 5.8rem;
       line-height: 2.2rem; }
-      @media (max-width: 390px) {
+      @media (max-width: 490px) {
         .footer-section-mobile .reach-us .form--container label {
-          padding-left: 4rem; } }
+          font-size: 1.8rem; } }
       .footer-section-mobile .reach-us .form--container label::after {
         background-color: transparent !important; }
     .footer-section-mobile .reach-us .form--container .form-floating {
@@ -10123,6 +10668,9 @@ img {
       font-size: 2.4rem;
       color: white;
       padding-left: 5.8rem; }
+      @media (max-width: 490px) {
+        .footer-section-mobile .reach-us .form--container input[type="text"] {
+          font-size: 1.8rem; } }
       .footer-section-mobile .reach-us .form--container input[type="text"]:focus {
         border-bottom: 1px solid #ffbc39 !important;
         border-radius: 0px;
@@ -10136,6 +10684,9 @@ img {
       line-height: normal;
       color: white;
       padding-left: 5.8rem; }
+      @media (max-width: 490px) {
+        .footer-section-mobile .reach-us .form--container input[type="email"] {
+          font-size: 1.8rem; } }
       .footer-section-mobile .reach-us .form--container input[type="email"]:focus {
         border-bottom: 1px solid #ffbc39 !important;
         border-radius: 0px;
@@ -10156,6 +10707,9 @@ img {
           background-color: #ffbc39;
           border-radius: 50%;
           padding: 0.8rem; }
+          @media (max-width: 490px) {
+            .footer-section-mobile .reach-us .form--container .feedback--submit .submission .icon-element-main {
+              font-size: 1.8rem; } }
         .footer-section-mobile .reach-us .form--container .feedback--submit .submission button {
           background-color: transparent;
           border: none; }
@@ -10345,11 +10899,16 @@ body {
   width: 100%;
   z-index: 1;
   padding: 2rem;
-  transition: top 0.9s; }
+  transition: top 0.9s;
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+  transform: translateY(0%);
+  transition: all .8s; }
+  .navbar:hover {
+    transform: translateY(0%);
+    background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); }
   .navbar__custom {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     width: 100%; }
     .navbar__custom .navbar-brand img {
       max-width: 12rem; }
@@ -10360,6 +10919,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: -1.6rem;
     margin-left: auto;
     margin-bottom: 0;
     padding-right: 12rem; }
@@ -10385,7 +10945,7 @@ body {
       color: #FFBC39; }
 
 .fade-up-header {
-  top: -100%; }
+  transform: translateY(-80%); }
 
 .footer--section {
   background: linear-gradient(0deg, #3246bc 11.06%, #880656 103.15%);

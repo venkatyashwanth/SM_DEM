@@ -43,76 +43,14 @@
   // Mouse-Pointer - End
 }
 
-/* <!-- NavigationBar --> */
-{
-  // NavigationBar Hide/Show Functionality - Start
-  var header = document.querySelector("header nav");
-  const hideNav = () => {
-    header.classList.remove("fade-up-header");
-  };
-  document.querySelector("body").addEventListener("wheel", hideNav);
-  document.querySelector("body").addEventListener("keydown", (event) => {
-    if (event.key === "ArrowDown" || "ArrowUp") {
-      hideNav();
-    }
-  });
-
-  // inViewport definition
-  (function ($, win) {
-    $.fn.inViewport = function (cb) {
-      return this.each(function (i, el) {
-        function visPx() {
-          var elH = $(el).outerHeight(),
-            H = $(win).height(),
-            r = el.getBoundingClientRect(),
-            t = r.top,
-            b = r.bottom;
-          return cb.call(
-            el,
-            Math.max(0, t > 0 ? Math.min(elH, H - t) : b < H ? b : H)
-          );
-        }
-        visPx();
-        $(win).on("resize scroll", visPx);
-      });
-    };
-  })(jQuery, window);
-
-  let count = 0;
-  const hideNavigation = () => {
-    $("#homePage").inViewport(function (px) {
-      if (px >= window.innerHeight) {
-        header.classList.remove("fade-up-header");
-      } else {
-        if (count === 0) {
-          let timeOut = setTimeout(() => {
-            header.classList.add("fade-up-header");
-            count = 0;
-          }, 6000);
-          count = count + 1;
-        }
-      }
-    });
-  };
-
-  document.querySelector("body").addEventListener("wheel", hideNavigation);
-  window.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowDown" || "ArrowUp") {
-      hideNavigation();
-    }
-  });
-
-  // NavigationBar Hide/Show Functionality - End
-}
-
 /* <!-- FullPage-Scrolling --> */
 {
-  // FullPage - FullScreenScrolling - start
   if ($(window).width() >= 768) {
     var myFullpage = new fullpage("#fullpage", {
-      autoScrolling: true,
+      autoScrolling: false,
       scrollHorizontally: true,
-      licenseKey: "YOUR LICENSE KEY HERE",
+      // css3: true,
+      scrollingSpeed: 1000,
     });
   }
   // FullPage - FullScreenScrolling - end
@@ -149,7 +87,7 @@
 
     if (flag) {
       prevSlideBtn.textContent = "Unmute";
-      prevSlideBtn.classList.remove("soundBtn__muteBtn")
+      prevSlideBtn.classList.remove("soundBtn__muteBtn");
       prevSlideBtn.classList.add("soundBtn__unmuteBtn");
     }
     console.log(prevSlideBtn.classList);
@@ -810,6 +748,47 @@
   });
 }
 
+/* Social-Media-Section */
+{
+  var swiperInsta = new Swiper(".instaSwiper", {
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+    },
+    slidesPerView: 2,
+    spaceBetween: 65,
+    slideToClickedSlide: true,
+    speed: 1400,
+  });
+
+  // youtubeSwiper
+  var swiperYoutube = new Swiper(".youtubeSwiper", {
+    grabCursor: true,
+    slidesPerView: 4,
+    spaceBetween: 165,
+    slideToClickedSlide: true,
+    speed: 1400,
+  });
+
+  /* Mobile-Layout */
+  var swiperMobileInsta = new Swiper(".mobileInstaSwiper", {
+    grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    speed: 1400,
+  });
+
+  // youtubeSwiper
+  var swiperMobileYoutube = new Swiper(".youtubeMobileSwiper", {
+    grabCursor: true,
+    slidesPerView: 1.3,
+    spaceBetween: 20,
+    speed: 1400,
+    slidesOffsetBefore: 20,
+    slidesOffsetAfter: 20,
+  });
+}
+
 /* <!-- Footer --> */
 {
   // Footer - ChannelSwiper - Start
@@ -842,6 +821,96 @@
     spaceBetween: 20,
   });
 }
+
+/* <!-- Adding Pages - FullPage --> */
+{
+  $(document).ready(function() {
+    $("#fullpage").fullpage({
+      anchors: [
+        "homePage",
+        "allShowsSection",
+        "scheduleSection",
+        "fashionHubSection",
+        "gamesSection",
+        "videosSection",
+        "socialMediaSection",
+        "footerSection",
+      ],
+      // menu: "#navigationMenu",
+      // css3: true
+    })
+  })
+//   $('#fullpage').fullpage({
+//     
+// });
+}
+
+
+/* <!-- NavigationBar --> */
+{
+  // NavigationBar Hide/Show Functionality - Start
+  var header = document.querySelector("header nav");
+  const hideNav = () => {
+    header.classList.add("fade-up-header");
+  };
+  setTimeout(()=>{
+    hideNav();
+  }, 5000)
+  // document.querySelector("body").addEventListener("wheel", hideNav);
+  // document.querySelector("body").addEventListener("keydown", (event) => {
+  //   if (event.key === "ArrowDown" || "ArrowUp") {
+  //     hideNav();
+  //   }
+  // });
+
+  // inViewport definition
+  // (function ($, win) {
+  //   $.fn.inViewport = function (cb) {
+  //     return this.each(function (i, el) {
+  //       function visPx() {
+  //         var elH = $(el).outerHeight(),
+  //           H = $(win).height(),
+  //           r = el.getBoundingClientRect(),
+  //           t = r.top,
+  //           b = r.bottom;
+  //         return cb.call(
+  //           el,
+  //           Math.max(0, t > 0 ? Math.min(elH, H - t) : b < H ? b : H)
+  //         );
+  //       }
+  //       visPx();
+  //       $(win).on("resize scroll", visPx);
+  //     });
+  //   };
+  // })(jQuery, window);
+
+  // let count = 0;
+  // const hideNavigation = () => {
+  //   $("#homePage").inViewport(function (px) {
+  //     if (px >= window.innerHeight) {
+  //       header.classList.remove("fade-up-header");
+  //     } else {
+  //       if (count === 0) {
+  //         let timeOut = setTimeout(() => {
+  //           header.classList.add("fade-up-header");
+  //           count = 0;
+  //         }, 1000);
+  //         count = count + 1;
+  //       }
+  //     }
+  //   });
+  // };
+
+  // document.querySelector("body").addEventListener("wheel", hideNavigation);
+  // window.addEventListener("keydown", (event) => {
+  //   if (event.key === "ArrowDown" || "ArrowUp") {
+  //     hideNavigation();
+  //   }
+  // });
+
+  // NavigationBar Hide/Show Functionality - End
+}
+
 
 /* <!-- SelectDropDown-Box --> */
 {

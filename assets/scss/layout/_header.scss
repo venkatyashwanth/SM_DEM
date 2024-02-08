@@ -6,10 +6,19 @@
   z-index: 1;
   padding: 2rem;
   transition: top 0.9s;
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+  // transform: translateY(-80%);
+  transform: translateY(0%);
+  transition: all .8s;
+  &:hover{
+    transform: translateY(0%);
+    background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+  }
+
   &__custom {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    // align-items: center;
     width: 100%;
     .navbar-brand {
       img {
@@ -24,6 +33,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: -1.6rem;
     margin-left: auto;
     margin-bottom: 0;
     padding-right: 12rem;
@@ -58,5 +68,5 @@
   }
 }
 .fade-up-header {
-  top: -100%;
+  transform: translateY(-80%);
 }

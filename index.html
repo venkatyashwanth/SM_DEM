@@ -19,49 +19,54 @@
     <!-- Desktop -->
     <div class="d-none d-md-block desktop-screen">
         <header class="section-name">
-            <nav class="navbar navbar-light">
+            <nav class="navbar navbar-light" id="navigationMenu">
                 <div class="navbar__custom">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="#homePage">
                         <img src="./assets/images/marathi-logo.png" alt="" class="img-fluid">
                     </a>
-                    <ul class="list-unstyled navbar__list">
+                    <ul class="list-unstyled navbar__list"  >
                         <li class="navbar__list-item">
-                            <a href="#0">
+                            <a data-menuanchor="allShowsSection" href="#allShowsSection">
                                 All Shows
                             </a>
                         </li>
                         <li class="navbar__list-item">
-                            <a href="#0">
+                            <a data-menuanchor="scheduleSection" href="#scheduleSection">
                                 schedule
                             </a>
                         </li>
                         <li class="navbar__list-item">
-                            <a href="#0">
+                            <a data-menuanchor="fashionHubSection" href="#fashionHubSection">
                                 Fashion hUB
                             </a>
                         </li>
-                        <li class="navbar__list-item">
+                        <!-- <li class="navbar__list-item">
                             <a href="#0">
                                 About Us
                             </a>
-                        </li>
+                        </li> -->
                         <li class="navbar__list-item">
-                            <a href="#0">
-                                Videos
-                            </a>
-                        </li>
-                        <li class="navbar__list-item">
-                            <a href="#0">
+                            <a data-menuanchor="gamesSection" href="#gamesSection">
                                 Games
                             </a>
                         </li>
                         <li class="navbar__list-item">
+                            <a data-menuanchor="videosSection" href="#videosSection">
+                                Videos
+                            </a>
+                        </li>
+                        <li class="navbar__list-item d-none">
+                            <a data-menuanchor="socialMediaSection" href="#socialMediaSection">
+                                socialMedia
+                            </a>
+                        </li>
+                        <!-- <li class="navbar__list-item">
                             <a href="#0">
                                 Contest
                             </a>
-                        </li>
+                        </li> -->
                         <li class="navbar__list-item">
-                            <a href="#0">
+                            <a data-menuanchor="footerSection" href="#footerSection">
                                 Contact us
                             </a>
                         </li>
@@ -96,7 +101,7 @@
 
         <div id="fullpage" class="section-name" data-name="remPage">
             <!-- Hero-Banner -->
-            <div class="section hero-banner" id="homePage">
+            <div class="section active hero-banner" id="section0">
                 <section class="hero-banner__video">
                     <div class="swiper-container slider">
                         <div class="swiper-wrapper">
@@ -279,7 +284,7 @@
             </div>
 
             <!-- Show-Section -->
-            <div class="section shows-section">
+            <div class="section shows-section" id="section1">
                 <div class="shows-section__oldNewShows">
                     <ul class="nav nav-tabs shows-section__tabs" id="myTab" role="tablist">
                         <li class="nav-item nav-item--role" role="presentation">
@@ -775,7 +780,7 @@
             </div>
 
             <!-- Schedule-Section -->
-            <div class="section schedule">
+            <div class="section schedule" id="section2">
                 <div class="schedule__wrapper clear-fix">
                     <div class="schedule__controlPanel">
                         <h1 class="blur-heading" style="text-align: right;">SCHEDULE</h1>
@@ -948,7 +953,7 @@
             </div>
 
             <!-- FashionHub-Section -->
-            <div class="section fasion-hub position-relative">
+            <div class="section fasion-hub position-relative" id="section3">
                 <!-- Top -->
                 <div class="fasion-hub__top">
                     <div class="fasion-hub__details">
@@ -1223,7 +1228,7 @@
             </div>
 
             <!-- Games-Section -->
-            <div class="section games">
+            <div class="section games" id="section4">
                 <h1>Game <span>Zone</span></h1>
                 <div class="game-cards">
                     <!-- 1 -->
@@ -1310,7 +1315,7 @@
             </div>
 
             <!-- Videos-Section -->
-            <section class="section videoSlider">
+            <div class="section videoSlider" id="section5">
                 <!-- TrendingNow -->
                 <div class="videoSlider__trendingNow">
                     <h3>Trending Now</h3>
@@ -1472,16 +1477,176 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <!-- SocialMedia-Section -->
-            <section class="section socialMedia" style="background-color: red;">
+            <div class="section social-media" id="section6">
+                <div class="social-media__top">
+                    <div class="social-media__boxes">
+                        <!-- Facebook -->
+                        <div class="social-media__boxes-container social-media__boxes-fb">
+                            <img src="./assets/images/social__media-fb.png" alt="fb">
 
-            </section>
+                            <div class="overlay-text">
+                                <div class="social-media__brand">
+                                    <img class="social-media__brand-logo" src="./assets/images/fb__social-media.svg"
+                                        alt="fb">
+                                    <div class="social-media__brand-name">
+                                        <span>facebook</span>
+                                    </div>
+                                    <div class="social-media__brand-description">
+                                        Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting
+                                        industry. Lorem Ipsum has been
+                                        the industry's standard dummy
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Twitter -->
+                        <div class="social-media__boxes-container social-media__boxes-tw">
+                            <img src="./assets/images/social__media-tw.png" alt="tw">
+                            <div class="overlay-text">
+                                <div class="social-media__brand">
+                                    <img class="social-media__brand-logo" src="./assets/images/tw__social-media.svg"
+                                        alt="fb">
+                                    <div class="social-media__brand-name">
+                                        <span>twitter</span>
+                                    </div>
+                                    <div class="social-media__brand-description">
+                                        Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting
+                                        industry. Lorem Ipsum has been
+                                        the industry's standard dummy
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Instagram -->
+                        <div class="social-media__boxes-container social-media__boxes-ins">
+                            <img src="./assets/images/social__media-ins.png" alt="ins">
+                            <div class="insta-logo-name">
+                                <p class="brand-name">instagram</p>
+                                <img src="./assets/images/social__media-instaClrlogo.png" alt="insta">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-media__slider-wrapper__insta">
+                        <div class="slider-heading">
+                            <h3 class="heading">
+                                <span>instagram</span>live streaming
+                            </h3>
+                        </div>
+                        <div class="swiper instaSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/insta_livestream-1.png" alt="insta-1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/insta_livestream-1.png" alt="insta-1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/insta_livestream-1.png" alt="insta-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media__bottom">
+                    <div class="social-media__bottom-text">
+                        <div class="social-media__bottom-text-wrap">
+                            <div class="icon-wrapper">
+                                <span class="icon-youtube"></span>
+                            </div>
+                            <h3 class="social-heading-text">Youtube</h3>
+                        </div>
+
+                    </div>
+                    <div class="social-media__bottom-slider">
+                        <div class="swiper youtubeSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/footerImg/trendingImg_1.png" alt="utube-1">
+                                    </div>
+                                    <div class="program-desc">
+                                        <p>
+                                            <span>Abol Preetichi Ajab Kahani</span>
+                                            <span>Episode 1 - 17th July 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/footerImg/trendingImg_2.png" alt="utube-2">
+                                    </div>
+                                    <div class="program-desc">
+                                        <p>
+                                            <span>Abol Preetichi Ajab Kahani</span>
+                                            <span>Episode 1 - 17th July 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/footerImg/trendingImg_3.png" alt="utube-3">
+                                    </div>
+                                    <div class="program-desc">
+                                        <p>
+                                            <span>Abol Preetichi Ajab Kahani</span>
+                                            <span>Episode 1 - 17th July 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/footerImg/trendingImg_1.png" alt="utube-3">
+                                    </div>
+                                    <div class="program-desc">
+                                        <p>
+                                            <span>Abol Preetichi Ajab Kahani</span>
+                                            <span>Episode 1 - 17th July 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/footerImg/trendingImg_1.png" alt="utube-3">
+                                    </div>
+                                    <div class="program-desc">
+                                        <p>
+                                            <span>Abol Preetichi Ajab Kahani</span>
+                                            <span>Episode 1 - 17th July 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/footerImg/trendingImg_3.png" alt="utube-3">
+                                    </div>
+                                    <div class="program-desc">
+                                        <p>
+                                            <span>Abol Preetichi Ajab Kahani</span>
+                                            <span>Episode 1 - 17th July 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <!-- Footer -->
-            <div class="section">
+            <div class="section" id="section7">
                 <!-- footer -->
                 <footer class="footer--section">
                     <div class="container-fluid">
@@ -2920,6 +3085,136 @@
                                         <img src="./assets/images/footerImg/trendingImg_2.png" alt="image">
                                     </div>
                                     <div class="slide-description">
+                                        <p>
+                                            <span>Abol Preetichi Ajab Kahani</span>
+                                            <span>Episode 1 - 17th July 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SocialMedia - Section -->
+            <div class="socialMedia-mobile">
+                <div class="social-media">
+                    <div class="social-media--top">
+                        <!-- fb -->
+                        <div class="social-media-fb sm-aspectRatio">
+                            <div class="img-wrapper">
+                                <img src="./assets/images/social__media-fb.png" alt="fb">
+                            </div>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <img class="social-media__brand-logo" src="./assets/images/fb__social-media.svg"
+                                        alt="fb">
+                                    <div class="social-media__brand-name">
+                                        <span>facebook</span>
+                                    </div>
+                                    <div class="social-media__brand-description">
+                                        Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting
+                                        industry. Lorem Ipsum has been
+                                        the industry's standard dummy
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tw -->
+                        <div class="social-media-tw sm-aspectRatio">
+                            <div class="img-wrapper">
+                                <img src="./assets/images/social__media-tw.png" alt="tw">
+                            </div>
+                            <div class="overlay">
+                                <div class="overlay-text">
+                                    <img class="social-media__brand-logo" src="./assets/images/tw__social-media.svg"
+                                        alt="tw">
+                                    <div class="social-media__brand-name">
+                                        <span>twitter</span>
+                                    </div>
+                                    <div class="social-media__brand-description">
+                                        Lorem Ipsum is simply dummy text
+                                        of the printing and typesetting
+                                        industry. Lorem Ipsum has been
+                                        the industry's standard dummy
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ins -->
+                    <div class="social-media--bottom">
+                        <div class="social-media-ins sm-aspectRatio">
+                            <div class="img-wrapper">
+                                <img src="./assets/images/social__media-ins.png" alt="ins">
+                            </div>
+                            <div class="insta-brandName-logo">
+                                <span class="brand-name">instagram</span>
+                                <img src="./assets/images/social__media-instaClrlogo.png" alt="insta">
+                            </div>
+                        </div>
+                        <div class="social-media-insta-swiper">
+                            <div class="swiper mobileInstaSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="content-wrapper">
+                                            <img src="./assets/images/insta_livestream-1.png" alt="insta-1">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-wrapper">
+                                            <img src="./assets/images/insta_livestream-1.png" alt="insta-1">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="content-wrapper">
+                                            <img src="./assets/images/insta_livestream-1.png" alt="insta-1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-youtube">
+                    <div class="brandname-logo">
+                        <div class="icon-wrapper">
+                            <span class="icon-youtube"></span>
+                        </div>
+                        <h3 class="social-heading-text">Youtube</h3>
+                    </div>
+                    <div class="youtube-swiper">
+                        <div class="swiper youtubeMobileSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/footerImg/trendingImg_1.png" alt="utube-1">
+                                    </div>
+                                    <div class="program-desc">
+                                        <p>
+                                            <span>Abol Preetichi Ajab Kahani</span>
+                                            <span>Episode 1 - 17th July 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/footerImg/trendingImg_1.png" alt="utube-1">
+                                    </div>
+                                    <div class="program-desc">
+                                        <p>
+                                            <span>Abol Preetichi Ajab Kahani</span>
+                                            <span>Episode 1 - 17th July 2023</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content-wrapper">
+                                        <img src="./assets/images/footerImg/trendingImg_1.png" alt="utube-1">
+                                    </div>
+                                    <div class="program-desc">
                                         <p>
                                             <span>Abol Preetichi Ajab Kahani</span>
                                             <span>Episode 1 - 17th July 2023</span>
